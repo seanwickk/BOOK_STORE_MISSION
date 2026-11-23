@@ -1,0 +1,430 @@
+ADD,Pride and Prejudice,48,Romance
+ADD,Frankenstein,15,Gothic
+ADD,Dracula,9,Gothic
+ADD,Moby-Dick,55,Adventure
+ADD,The Time Machine,25,Science Fiction
+ADD,Alice's Adventures in Wonderland,23,Fantasy
+ADD,A Tale of Two Cities,22,Classic
+ADD,Little Women,16,Classic
+ADD,The Adventures of Sherlock Holmes,55,Mystery
+ADD,War and Peace,14,Classic
+ADD,The Odyssey,51,Classic
+ADD,Great Expectations,55,Classic
+ADD,Jane Eyre,42,Romance
+ADD,The War of the Worlds,13,Science Fiction
+ADD,Wuthering Heights,45,Gothic
+ADD,Anna Karenina,35,Classic
+ADD,The Picture of Dorian Gray,10,Gothic
+ADD,Treasure Island,9,Adventure
+ADD,Emma,13,Romance
+ADD,The Adventures of Tom Sawyer,21,Adventure
+ADD,Middlemarch,22,Classic
+ADD,Dubliners,40,Classic
+ADD,The Turn of the Screw,46,Gothic
+ADD,Twenty Thousand Leagues Under the Sea,9,Science Fiction
+ADD,Heart of Darkness,43,Classic
+REMOVE,A Tale of Two Cities,9
+ADD,The War of the Worlds,19,Science Fiction
+SEARCH,The Adventures of Sherlock Holmes
+REMOVE,Pride and Prejudice,3
+REMOVE,The Turn of the Screw,5
+ADD,The Time Machine,25,Science Fiction
+ADD,The Odyssey,13,Classic
+REMOVE,Moby-Dick,6
+ADD,The Adventures of Tom Sawyer,2,Adventure
+REMOVE,Twenty Thousand Leagues Under the Sea,2
+ADD,Jane Eyre,10,Romance
+REMOVE,Middlemarch,6
+ADD,Emma,3,Romance
+REMOVE,Frankenstein,5
+SEARCH,Dracula
+REMOVE,Moby-Dick,8
+SEARCH,Middlemarch
+REMOVE,Alice's Adventures in Wonderland,4
+ADD,Dubliners,22,Classic
+ADD,Middlemarch,21,Classic
+REMOVE,Alice's Adventures in Wonderland,4
+REMOVE,Alice's Adventures in Wonderland,5
+REMOVE,Middlemarch,4
+ADD,Dubliners,25,Classic
+ADD,Heart of Darkness,2,Classic
+REMOVE,The Odyssey,2
+SEARCH,A Tale of Two Cities
+SEARCH,Emma
+ADD,The Odyssey,16,Classic
+SEARCH,Jane Eyre
+REMOVE,Middlemarch,5
+ADD,The Time Machine,18,Science Fiction
+
+ADD,Treasure Island,19,Adventure
+SEARCH,The War of the Worlds
+REMOVE,Jane Eyre,3
+REMOVE,The Picture of Dorian Gray,1
+ADD,Moby-Dick,6,Adventure
+REMOVE,Dubliners,2
+REMOVE,Jane Eyre,8
+ADD,The Picture of Dorian Gray,18,Gothic
+REMOVE,Pride and Prejudice,2
+SEARCH,Dubliners
+ADD,Heart of Darkness,21,Classic
+ADD,The Odyssey,14,Classic
+REMOVE,Alice's Adventures in Wonderland,5
+REMOVE,The Picture of Dorian Gray,9
+SEARCH,Moby-Dick
+SEARCH,War and Peace
+REMOVE,The Picture of Dorian Gray,3
+REMOVE,Great Expectations,9
+SEARCH,Heart of Darkness
+REMOVE,Pride and Prejudice,8
+ADD,Pride and Prejudice,12,Romance
+ADD,War and Peace,8,Classic
+SEARCH,Emma
+REMOVE,Dracula,2
+REMOVE,Heart of Darkness,3
+REMOVE,The Time Machine,9
+ADD,Alice's Adventures in Wonderland,20,Fantasy
+SEARCH,The War of the Worlds
+REMOVE,Treasure Island,4
+ADD,The Turn of the Screw,22,Gothic
+REMOVE,Middlemarch,9
+ADD,Wuthering Heights,8,Gothic
+ADD,Dracula,19,Gothic
+ADD,Treasure Island,8,Adventure
+ADD,Pride and Prejudice,21,Romance
+ADD,Frankenstein,2,Gothic
+ADD,The Odyssey,8,Classic
+REMOVE,The Adventures of Sherlock Holmes,4
+ADD,Treasure Island,19,Adventure
+REMOVE,Emma,8
+ADD,The War of the Worlds,4,Science Fiction
+REMOVE,Dubliners,7
+REMOVE,The War of the Worlds,1
+
+REMOVE,Dubliners,2
+REMOVE,Frankenstein,6
+ADD,Moby-Dick,7,Adventure
+REMOVE,Treasure Island,7
+ADD,Alice's Adventures in Wonderland,8,Fantasy
+REMOVE,Dracula,9
+ADD,Moby-Dick,18,Adventure
+SEARCH,Pride and Prejudice
+SEARCH,Heart of Darkness
+REMOVE,Alice's Adventures in Wonderland,8
+SEARCH,A Tale of Two Cities
+ADD,Frankenstein,1,Gothic
+ADD,Jane Eyre,15,Romance
+REMOVE,War and Peace,9
+REMOVE,Dubliners,3
+ADD,A Tale of Two Cities,2,Classic
+REMOVE,Emma,1
+ADD,Twenty Thousand Leagues Under the Sea,2,Science Fiction
+REMOVE,Emma,7
+ADD,The Picture of Dorian Gray,17,Gothic
+SEARCH,Dracula
+REMOVE,Dracula,4
+ADD,Jane Eyre,19,Romance
+REMOVE,Little Women,1
+ADD,The Adventures of Tom Sawyer,22,Adventure
+REMOVE,Emma,3
+ADD,The Adventures of Sherlock Holmes,23,Mystery
+ADD,The Odyssey,13,Classic
+REMOVE,The Time Machine,5
+ADD,Wuthering Heights,25,Gothic
+ADD,Dracula,20,Gothic
+SEARCH,Emma
+REMOVE,Dracula,9
+ADD,The Adventures of Sherlock Holmes,12,Mystery
+SEARCH,Dracula
+ADD,Great Expectations,15,Classic
+REMOVE,Treasure Island,10
+REMOVE,Middlemarch,9
+SEARCH,War and Peace
+SEARCH,Moby-Dick
+ADD,The Time Machine,4,Science Fiction
+REMOVE,Twenty Thousand Leagues Under the Sea,5
+REMOVE,War and Peace,6
+REMOVE,A Tale of Two Cities,5
+REMOVE,The Picture of Dorian Gray,1
+REMOVE,Dracula,5
+ADD,Frankenstein,25,Gothic
+REMOVE,The Time Machine,5
+ADD,Moby-Dick,,Adventure
+REMOVE,Alice's Adventures in Wonderland,9
+REMOVE,The Turn of the Screw,1
+ADD,Moby-Dick,23,Adventure
+REMOVE,The Time Machine,6
+REMOVE,Emma,4
+ADD,The Time Machine,12,Science Fiction
+SEARCH,Frankenstein
+REMOVE,A Tale of Two Cities,2
+REMOVE,Great Expectations,7
+REMOVE,The Adventures of Tom Sawyer,4
+SEARCH,Alice's Adventures in Wonderland
+SEARCH,Alice's Adventures in Wonderland
+ADD,Pride and Prejudice,11,Romance
+SEARCH,The War of the Worlds
+SEARCH,Twenty Thousand Leagues Under the Sea
+ADD,The Adventures of Sherlock Holmes,23,Mystery
+REMOVE,Moby-Dick,1
+ADD,Anna Karenina,15,Classic
+ADD,Great Expectations,8,Classic
+ADD,Little Women,7,Classic
+ADD,Jane Eyre,3,Romance
+ADD,Heart of Darkness,21,Classic
+REMOVE,The Picture of Dorian Gray,9
+SEARCH,The Odyssey
+SEARCH,Moby-Dick
+ADD,Little Women,five,Classic
+ADD,The Adventures of Sherlock Holmes,9,Mystery
+ADD,Great Expectations,N/A,Classic
+ADD,Frankenstein,14,Gothic
+REMOVE,Great Expectations,6
+REMOVE,The War of the Worlds,9
+REMOVE,Moby-Dick,10
+ADD,A Tale of Two Cities,23,Classic
+ADD,The War of the Worlds,18,Science Fiction
+REMOVE,Dubliners,4
+REMOVE,Great Expectations,6
+ADD,The Adventures of Tom Sawyer,4,Adventure
+SEARCH,Twenty Thousand Leagues Under the Sea
+ADD,The Picture of Dorian Gray,14,Gothic
+REMOVE,The Odyssey,5
+ADD,Treasure Island,14,Adventure
+SEARCH,Dubliners
+REMOVE,Dubliners,3
+REMOVE,The Adventures of Tom Sawyer,7
+SEARCH,Treasure Island
+ADD,War and Peace,14,Classic
+REMOVE,Emma,3
+REMOVE,Wuthering Heights,4
+REMOVE,The Picture of Dorian Gray,3
+ADD,Dubliners,17,Classic
+REMOVE,Nonexistent Item Nobody Ever Added,3
+REMOVE,Dubliners,6
+SEARCH,Dracula
+ADD,Heart of Darkness,10,Classic
+SEARCH,Little Women
+ADD,The Time Machine,8,Science Fiction
+REMOVE,Anna Karenina,2
+REMOVE,Wuthering Heights,10
+REMOVE,A Tale of Two Cities,7
+REMOVE,Anna Karenina,3
+REMOVE,Middlemarch,2
+REMOVE,Heart of Darkness,3
+REMOVE,The Turn of the Screw,1
+ADD,Treasure Island,4,Adventure
+ADD,Wuthering Heights,15,Gothic
+REMOVE,Dubliners,9
+ADD,The Adventures of Tom Sawyer,25,Adventure
+REMOVE,Wuthering Heights,9
+SEARCH,The War of the Worlds
+REMOVE,Treasure Island,3
+SEARCH,Twenty Thousand Leagues Under the Sea
+ADD,Wuthering Heights,8,Gothic
+ADD,Middlemarch,25,Classic
+REMOVE,The Picture of Dorian Gray,4
+REMOVE,The Adventures of Sherlock Holmes,5
+ADD,Little Women,11,Classic
+ADD,Treasure Island,5,Adventure
+REMOVE,Little Women,3
+ADD,The Turn of the Screw,14,Gothic
+ADD,The War of the Worlds,15,Science Fiction
+ADD,The War of the Worlds,14,Science Fiction
+SEARCH,Jane Eyre
+SEARCH,Emma
+SEARCH,Pride and Prejudice
+REMOVE,Heart of Darkness,8
+SEARCH,Pride and Prejudice
+REMOVE,War and Peace,7
+REMOVE,Treasure Island,9
+SEARCH,The Adventures of Tom Sawyer
+ADD,Anna Karenina,14,Classic
+ADD,Anna Karenina,11,Classic
+REMOVE,Dubliners,7
+REMOVE,Another Fake Item,1
+ADD,Twenty Thousand Leagues Under the Sea,15,Science Fiction
+SEARCH,The Time Machine
+ADD,Treasure Island,13,Adventure
+REMOVE,Emma,1
+REMOVE,Dracula,3
+ADD,Wuthering Heights,9,Gothic
+ADD,Jane Eyre,15,Romance
+ADD,The Odyssey,13,Classic
+REMOVE,The Adventures of Sherlock Holmes,7
+REMOVE,Alice's Adventures in Wonderland,9999
+SEARCH,The Adventures of Sherlock Holmes
+ADD,Anna Karenina,18,Classic
+SEARCH,Frankenstein
+ADD,Great Expectations,3,Classic
+SEARCH,Heart of Darkness
+REMOVE,Frankenstein,4
+SEARCH,A Tale of Two Cities
+add,Dracula,5,Gothic
+ADD,The Adventures of Tom Sawyer,5,Adventure
+REMOVE,Anna Karenina,10
+REMOVE,A Tale of Two Cities,5
+REMOVE,Heart of Darkness,10
+SEARCH,The Adventures of Tom Sawyer
+ADD,The Turn of the Screw,6,Gothic
+ADD,War and Peace,1,Classic
+REMOVE,War and Peace,7
+SEARCH,Jane Eyre
+ADD,A Tale of Two Cities,23,Classic
+ADD,Middlemarch,23,Classic
+ADD,Heart of Darkness,22,Classic
+SEARCH,The Adventures of Tom Sawyer
+REMOVE,Emma,3
+REMOVE,Treasure Island,6
+REMOVE,Dracula,6
+SEARCH,Pride and Prejudice
+ADD,Anna Karenina,12,Classic
+SEARCH,Middlemarch
+REMOVE,Wuthering Heights,7
+REMOVE,Alice's Adventures in Wonderland,5
+SEARCH,The Adventures of Tom Sawyer
+REMOVE,Treasure Island,8
+SEARCH,The War of the Worlds
+ADD,Emma,8,Romance
+ADD,Dracula,15,Gothic
+REMOVE,Little Women,10
+REMOVE,The Adventures of Tom Sawyer,6
+REMOVE,Pride and Prejudice,6
+REMOVE,Alice's Adventures in Wonderland,6
+ADD,The Adventures of Sherlock Holmes,20,Mystery
+SEARCH,The Turn of the Screw
+ADD,Treasure Island,7,Adventure
+ADD,Dracula,14,Gothic
+REMOVE,Anna Karenina,4
+REMOVE,The Turn of the Screw,8
+REMOVE,Wuthering Heights,2
+ADD,War and Peace,23,Classic
+ADD,Little Women,19,Classic
+REMOVE,Great Expectations,9
+REMOVE,Great Expectations,9
+REMOVE,The Odyssey,8
+ADD,The Adventures of Sherlock Holmes,8,Mystery
+REMOVE,Moby-Dick,6
+REMOVE,Moby-Dick,3
+ADD,A Tale of Two Cities,16,Classic
+ADDD,War and Peace,5,Classic
+REMOVE,The Adventures of Sherlock Holmes,9
+ADD,The Adventures of Tom Sawyer,4,Adventure
+ADD,A Tale of Two Cities,12,Classic
+ADD,Alice's Adventures in Wonderland,23,Fantasy
+ADD,Treasure Island,2,Adventure
+REMOVE,Frankenstein,3
+SEARCH,Middlemarch
+ADD,Anna Karenina,1,Classic
+ADD,Emma,16,Romance
+ADD,Wuthering Heights,2,Gothic
+SEARCH,The Adventures of Sherlock Holmes
+ADD,Anna Karenina,3,Classic
+REMOVE,Jane Eyre,10
+REMOVE,Middlemarch,3
+SEARCH,The Time Machine
+ADD,War and Peace,8,Classic
+REMOVE,Moby-Dick,7
+REMOVE,The Adventures of Tom Sawyer,10
+REMOVE,Little Women,7
+SEARCH,Wuthering Heights
+SEARCH,War and Peace
+ADD,  The War of the Worlds  ,7,Science Fiction
+ADD,The War of the Worlds,20,Science Fiction
+REMOVE,Frankenstein,2
+ADD,Heart of Darkness,7,Classic
+REMOVE,The Adventures of Sherlock Holmes,3
+ADD,Little Women,3,Classic
+ADD,Alice's Adventures in Wonderland,15,Fantasy
+REMOVE,The Turn of the Screw,5
+ADD,Frankenstein,23,Gothic
+REMOVE,War and Peace,8
+REMOVE,Dracula,5
+REMOVE,Middlemarch,4
+ADD,The War of the Worlds,8,Science Fiction
+ADD,Middlemarch,9,Classic
+ADD,The Time Machine,6,Science Fiction
+REMOVE,War and Peace,10
+REMOVE,War and Peace,8
+ADD,The Turn of the Screw,13,Gothic
+REMOVE,The Adventures of Sherlock Holmes,8
+ADD,Wuthering Heights,2,Gothic
+REMOVE,The War of the Worlds,10
+ADD,The Adventures of Sherlock Holmes,8,Mystery
+SEARCH,Dubliners
+REMOVE,Emma,1
+REMOVE,Heart of Darkness,5
+ADD,Emma,25,Romance
+REMOVE,Alice's Adventures in Wonderland,8
+ADD,The Adventures of Sherlock Holmes,19,Mystery
+ADD,The Picture of Dorian Gray,7,Gothic,extra,fields
+REMOVE,The War of the Worlds,8
+REMOVE,Dracula,7
+ADD,The Odyssey,4,Classic
+ADD,Alice's Adventures in Wonderland,23,Fantasy
+ADD,Anna Karenina,13,Classic
+REMOVE,Heart of Darkness,8
+ADD,Dracula,11,Gothic
+SEARCH,Moby-Dick
+SEARCH,Jane Eyre
+REMOVE,Pride and Prejudice,9
+REMOVE,Wuthering Heights,4
+REMOVE,The Picture of Dorian Gray,8
+REMOVE,Middlemarch,1
+ADD,A Tale of Two Cities,5,Classic
+REMOVE,War and Peace,8
+ADD,Moby-Dick,21,Adventure
+REMOVE,The Adventures of Tom Sawyer,3
+REMOVE,War and Peace,5
+ADD,The War of the Worlds,4,Science Fiction
+REMOVE,Emma
+SEARCH,Wuthering Heights
+SEARCH,Middlemarch
+SEARCH,Anna Karenina
+REMOVE,War and Peace,3
+SEARCH,The War of the Worlds
+ADD,Anna Karenina,18,Classic
+REMOVE,The Time Machine,10
+SEARCH,
+REMOVE,The Picture of Dorian Gray,3
+ADD,Dracula,14,Gothic
+SEARCH,The Odyssey
+ADD,The Picture of Dorian Gray,1,Gothic
+REMOVE,War and Peace,5
+SEARCH,Emma
+SEARCH,Anna Karenina
+REMOVE,Wuthering Heights,6
+REMOVE,The Odyssey,9
+REMOVE,Jane Eyre,6
+SEARCH,A Tale of Two Cities
+REMOVE,Little Women,4
+REMOVE,Heart of Darkness,6
+REMOVE,Twenty Thousand Leagues Under the Sea,7
+SEARCH,Jane Eyre
+SEARCH,Middlemarch
+SEARCH,Anna Karenina
+REMOVE,The Time Machine,10
+SEARCH,The Odyssey
+ADD,Wuthering Heights,15,Gothic
+REMOVE,Pride and Prejudice,7
+SEARCH,Middlemarch
+REMOVE,Dracula,5
+REMOVE,The Odyssey,7
+ADD,Middlemarch,11,Classic
+SEARCH,Dubliners
+SEARCH,Jane Eyre
+REMOVE,Middlemarch,8
+ADD,Treasure Island,3,Adventure
+REMOVE,Little Women,5
+REMOVE,Little Women,7
+REMOVE,Moby-Dick,2
+ADD,Wuthering Heights,10,Gothic
+ADD,Pride and Prejudice,2,Romance
+REMOVE,War and Peace,4
+ADD,The Time Machine,14,Science Fiction
+REMOVE,Emma,3
+ADD,Alice's Adventures in Wonderland,20,Fantasy
+REMOVE,Jane Eyre,4
+SEARCH,Anna Karenina
+ADD,The Time Machine,21,Science Fiction
+REMOVE,The Adventures of Sherlock Holmes,1
+SEARCH,Wuthering Heights

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Inventory Search</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+  h1 { font-size: 1.4rem; }
+  input { width: 100%; padding: 0.6rem; font-size: 1rem; box-sizing: border-box; margin-bottom: 1rem; }
+  .item { border: 1px solid #ddd; border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 0.5rem; }
+  .item table { width: 100%; border-collapse: collapse; }
+  .item td { padding: 2px 6px; font-size: 0.92rem; }
+  .item td.key { color: #666; width: 40%; }
+  .low-stock { border-left: 4px solid #c0392b; }
+  #count { color: #666; font-size: 0.9rem; margin-bottom: 0.5rem; }
+  #status { color: #c0392b; }
+</style>
+</head>
+<body>
+<h1>Inventory Search</h1>
+<p>Optional, given code. This page reads the <code>inventory.json</code>
+your script writes and filters your items as you type, so you can
+spot-check your results. To open it, run <code>python3 -m http.server</code>
+in your repo's top folder, then go to
+<a href="http://localhost:8000/tools/search.html">http://localhost:8000/tools/search.html</a>.
+Opening the file directly won't work, because browsers block a local page
+from reading a local JSON file. Press Control+C in Terminal to stop the
+server.</p>
+
+<input id="search" type="text" placeholder="Type to search across every field...">
+<div id="count"></div>
+<div id="status"></div>
+<div id="results"></div>
+
+<script>
+let allItems = [];
+
+async function load() {
+  try {
+    const res = await fetch("../inventory.json");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    allItems = await res.json();
+    document.getElementById("status").textContent = "";
+    render(allItems);
+  } catch (err) {
+    document.getElementById("status").textContent =
+      "Couldn't load ../inventory.json -- run inventory.py first so it " +
+      "exists, and make sure you're serving this over http:// (see " +
+      "instructions above), not opening the file directly. (" + err + ")";
+  }
+}
+
+function isLowStockGuess(item) {
+  // Purely a display hint for this given tool -- it doesn't know your
+  // class's actual is_low_stock() logic, so it guesses from any
+  // numeric-looking field with a small value. Your own print_summary()
+  // in inventory.py is the real source of truth for low stock, not this.
+  return Object.values(item).some(v => typeof v === "number" && v >= 0 && v < 5);
+}
+
+function render(items) {
+  document.getElementById("count").textContent =
+    `${items.length} item${items.length === 1 ? "" : "s"}`;
+  const container = document.getElementById("results");
+  container.innerHTML = "";
+  for (const item of items) {
+    const div = document.createElement("div");
+    div.className = "item" + (isLowStockGuess(item) ? " low-stock" : "");
+    const rows = Object.entries(item).map(
+      ([k, v]) => `<tr><td class="key">${k}</td><td>${v}</td></tr>`
+    ).join("");
+    div.innerHTML = `<table>${rows}</table>`;
+    container.appendChild(div);
+  }
+}
+
+document.getElementById("search").addEventListener("input", (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  if (!q) {
+    render(allItems);
+    return;
+  }
+  const filtered = allItems.filter(item =>
+    Object.values(item).some(v => String(v).toLowerCase().includes(q))
+  );
+  render(filtered);
+});
+
+load();
+</script>
+</body>
+</html>
