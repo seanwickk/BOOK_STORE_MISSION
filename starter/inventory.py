@@ -37,11 +37,10 @@ class YourInventoryItem:
             return True
         return False
         """ Evaluating Notable Low Book Stock"""
-        # TODO: return True or False. Your stakeholder didn't say what
-        # "low" means, so decide, and write down the assumption in
-        # REFLECTION.md's "Assumptions" section.
-        pass
 
+
+book = YourInventoryItem("ADD", "RISE and fallen", 5, "Gothic")
+print( "Is this book low on stock?", (book.is_low_stock()), "!")
 
 def read_batch_file(filepath):
     """
