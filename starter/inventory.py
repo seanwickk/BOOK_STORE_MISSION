@@ -9,7 +9,11 @@ Run it from your repo's top folder (not from inside this folder):
     python3 starter/inventory.py
 Before your final push you'll rename this folder to analysis/.
 """
-import json
+
+
+with open("bookstore_transactions.txt") as f:
+    books = [line for line in f.read().splitlines()
+               if line and not line.startswith("#")]
 
 
 class YourInventoryItem:
@@ -20,17 +24,19 @@ class YourInventoryItem:
     for, not more and not less.
     """
 
-    def __init__(self,commands,item, name,quantity,category):
+    def __init__(self,commands,item_name,quantity,category):
         self.commands = commands
-        self.item = item
-        self.name = name 
+        self.item = item_name  
         self.quantity = quantity
         self.category = category # Each required field list on Bookstore/FILE
 
 
 
     def is_low_stock(self):
-        """ """
+        if self.quantity <= 5:
+            return True
+        return False
+        """ Evaluating Notable Low Book Stock"""
         # TODO: return True or False. Your stakeholder didn't say what
         # "low" means, so decide, and write down the assumption in
         # REFLECTION.md's "Assumptions" section.
