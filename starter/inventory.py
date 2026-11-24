@@ -20,13 +20,17 @@ class YourInventoryItem:
     for, not more and not less.
     """
 
-    def __init__(self):
-        # TODO: add your own parameters (self, plus each attribute you're
-        # tracking) and store each one as self.whatever = whatever.
-        pass
+    def __init__(self,commands,item, name,quantity,category):
+        self.commands = commands
+        self.item = item
+        self.name = name 
+        self.quantity = quantity
+        self.category = category # Each required field list on Bookstore/FILE
+
+
 
     def is_low_stock(self):
-        """TODO: write your own docstring."""
+        """ """
         # TODO: return True or False. Your stakeholder didn't say what
         # "low" means, so decide, and write down the assumption in
         # REFLECTION.md's "Assumptions" section.
