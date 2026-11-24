@@ -17,13 +17,13 @@
 > would you check it?
 
 1. Assumption 1
-   - **Question:** _TODO_
-   - **Assumption:** _TODO_
-   - **Risk:** _TODO_
+   - **Question:** What have you considered as a low stock for a current type of book?
+   - **Assumption:** 5 items left for the tittle will be what we assumed to be low enough to notify Seller
+   - **Risk:** Store owner notify me their desired amount, or i calculate average amounts to get a mathematical answer  
 2. Assumption 2
-   - **Question:** _TODO_
-   - **Assumption:** _TODO_
-   - **Risk:** _TODO_
+   - **Question:** what categories sell the most so we post them at the top? 
+   - **Assumption:** Classic books sell decently well so ill recommended that first first place.
+   - **Risk:** Pinning the wrong categories at the top adds scrolling friction for staff during customer lookups and hides high-turnover genres that run out fastest.
 
 ## The 3+ edge cases you found and handled
 
