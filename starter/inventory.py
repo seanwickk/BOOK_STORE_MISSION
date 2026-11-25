@@ -11,12 +11,10 @@ Before your final push you'll rename this folder to analysis/.
 """
 
 
-with open("bookstore_transactions.txt") as f:
-    books = [line for line in f.read().splitlines()
-               if line and not line.startswith("#")]
 
 
-class YourInventoryItem:
+
+class Book_Smart:
     """
     TODO: rename this class to something that fits your scenario, and
     write a real docstring. What does one of these represent? At minimum
@@ -24,11 +22,11 @@ class YourInventoryItem:
     for, not more and not less.
     """
 
-    def __init__(self,commands,item_name,quantity,category):
+    def __init__(self,commands,item,quantity,category):
         self.commands = commands
-        self.item = item_name  
+        self.item = item  
         self.quantity = quantity
-        self.category = category # Each required field list on Bookstore/FILE
+        self.category = category # Each required field list on Bookstore/.txt_FILE
 
 
 
@@ -39,25 +37,76 @@ class YourInventoryItem:
         """ Evaluating Notable Low Book Stock"""
 
 
-book = YourInventoryItem("ADD", "RISE and fallen", 5, "Gothic")
-print( "Is this book low on stock?", (book.is_low_stock()), "!")
+
+
+book_watch = Book_Smart("ADD", "RISE and fallen", 5, "Gothic")
+
+print( "Is this book low on stock?", (book_watch.is_low_stock()), "!")
 
 def read_batch_file(filepath):
-    """
-    Read the batch file at `filepath` and return a list of its lines
-    (strings), unchanged. Deciding whether a line is usable happens in
-    validate_line(), not here. Use this docstring as the model for the
-    ones you write below: what the function does, what it takes, and what
-    it returns.
-    """
-    # TODO: implement
-    pass
+    '''Creating list for txt.file'''
+    with open(filepath) as f:
+        books = [line for line in f.read().splitlines()] 
+    return books
+print(read_batch_file("bookstore_transactions.txt"))
+
+
+
+
 
 
 def validate_line(line):
+    """ Validating list since edge cases errors"""
     """TODO: write your own docstring. What makes an ADD, REMOVE, or
     SEARCH line valid? What do you return for a valid line, and what for
     an invalid one?"""
+    parts = line.strip().split()
+
+    if not parts:
+        return False
+    commands = parts[0]
+######ADD######
+    if commands == "ADD":
+        if len(parts) != 4:
+            return False, "False field amount"
+        try: 
+            if parts[2].isdigit:
+                return None
+        except:
+            KeyError
+            return "String formatting is invalid retry"
+#####REMOVE#####
+    if commands == "REMOVE":
+        if len(parts) != 3:
+            return False, "False field amount"
+        try: 
+            if parts[2].isdigit:
+                return None
+        except:
+            KeyError 
+            return "String formatting is invalid retry"
+        if parts[2] <=100:
+            return  False, "key Error amount can not be negative"
+
+#####SEARCH#####
+    if commands == "SEARCH":
+        if len(parts) != 2:
+            return False, "False field amount"
+        
+#### Missed key value ###
+
+
+    
+        
+        
+
+
+
+
+
+           
+    
+
     # TODO: implement. One choice worth making on purpose: a quantity can
     # be present but not a number ("five"). Wrap int(quantity) in a
     # try/except ValueError. That asks Python "did this work?" instead
